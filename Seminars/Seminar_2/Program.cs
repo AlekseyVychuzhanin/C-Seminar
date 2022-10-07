@@ -40,7 +40,7 @@ int TwoDigitNumber(int num)
 int number = new Random().Next(100, 1000);
 int twoDigitNumber = TwoDigitNumber(number);
 
-Console.WriteLine("Number is " +twoDigitNumber);
+Console.WriteLine("Number is " + twoDigitNumber);
 */
 
 /*
