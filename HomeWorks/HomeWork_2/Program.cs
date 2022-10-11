@@ -1,6 +1,5 @@
-﻿/*
-// Задача 1. Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
-
+﻿// Задача 1. Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+/*
 int SecondDigit(int num)
 {
     int result;
@@ -18,9 +17,8 @@ int secondDigit = SecondDigit(number);
 Console.WriteLine("The second digit is " + secondDigit);
 */
 
-/*
 // Задача 2. Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-
+/*
 int ThirdDigit(int number)
 {
     int result;
@@ -44,9 +42,8 @@ int number = Convert.ToInt32(Console.ReadLine());
 int thirdNumber = ThirdDigit(number);
 */
 
-/*
 // Задача 3. Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
-
+/*
 bool Weekends(int number)
 {
     bool result;
