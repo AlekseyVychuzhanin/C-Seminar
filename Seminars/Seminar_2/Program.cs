@@ -50,7 +50,7 @@ bool MultipleNumber(int number, int a, int b)
 {
     bool result;
     
-    if (number % a == 0 && number % b == 0)
+    if (number % a == 0 && number % b == 0)dotn
         
         result = true;
 
