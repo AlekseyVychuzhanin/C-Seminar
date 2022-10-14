@@ -1,6 +1,5 @@
-﻿/*
-// Задача 1. Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
-
+﻿// Задача 1. Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+/*
 Console.Write("Input the first number ");
 int n1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input the second number ");
@@ -16,9 +15,8 @@ else
 }
 */
 
-/*
 // Задача 2. Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
-
+/*
 Console.Write("Input the first number: ");
 int n1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input the second number: ");
@@ -39,9 +37,8 @@ if (maxInt < n3)
 Console.WriteLine("Max = " + maxInt );
 */
 
-/*
 // Задача 3. Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
-
+/*
 Console.Write("Input a number: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
@@ -55,9 +52,8 @@ else
 }
 */
 
-/*
 // Задача 4. Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
-
+/*
 Console.Write("Input a number: ");
 int n = Convert.ToInt32(Console.ReadLine());
 

@@ -1,6 +1,5 @@
-﻿/*
-// Задача 1. Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает наибольшую цифру числа.
-
+﻿// Задача 1. Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает наибольшую цифру числа.
+/*
 int FindBiggestDigit(int num)
 {
     int max;
@@ -21,9 +20,8 @@ int biggestDigit = FindBiggestDigit(number);
 Console.WriteLine($"The biggest digit of {number} is {biggestDigit}");
 */
 
-/*
 // Задача 2. Напишите программу, которая выводит случайное трёхзначное число и удаляет вторую цифру этого числа.
-
+/*
 int TwoDigitNumber(int num)
 {
     int result;
@@ -43,9 +41,8 @@ int twoDigitNumber = TwoDigitNumber(number);
 Console.WriteLine("Number is " + twoDigitNumber);
 */
 
-/*
 // Задача 3. Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно a и b.
-
+/*
 bool MultipleNumber(int number, int a, int b)
 {
     bool result;
