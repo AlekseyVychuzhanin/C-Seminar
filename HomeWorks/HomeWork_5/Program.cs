@@ -57,8 +57,8 @@ void ShowArray(int[] array)
 int CountsEvenPosition (int[]array)
 {
     int count = 0;
-    for  (int i = 0; i < array.Length; i++)
-        if (i % 2 != 1)
+    for  (int i = 1; i < array.Length; i++)
+        if (i % 2 == 1)
             count += array[i];
     return count;
 }
