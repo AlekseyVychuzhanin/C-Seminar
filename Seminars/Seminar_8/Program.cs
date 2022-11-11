@@ -106,7 +106,7 @@ Show2dArray(myArray);
 */
 
 // Задача 3. Из двумерного массива целых чисел удалить строку и столбец, на пересечении которых расположен наименьший элемент.
-
+/*
 int[,] CreateRandom2dArray()
 {
     Console.Write("Input a number of rows: ");
@@ -182,10 +182,4 @@ int[,] myArray = CreateRandom2dArray();
 Show2dArray(myArray);
 int [,] newArray = FindMinInArray(myArray);
 Show2dArray(newArray);
-
-
-
-
-
-
-
+*/
