@@ -114,7 +114,7 @@ Console.WriteLine("Row with minimum sum of elements is: " + (row + 1));
 
 // Задача 3. Задайте две матрицы. Напишите программу,
 // которая будет находить произведение двух матриц.
-
+/*
 int[,] CreateRandom2dArray()
 {
     Console.Write("Input a number of rows: ");
@@ -147,7 +147,15 @@ void Show2dArray(int[,] array)
     Console.WriteLine();
 }
 
-
+int[,] MatrixProduct(int[,] oneArray, int[,] twoArray)
+{
+    int[,] matrixProduct = new int[oneArray.GetLength(0), twoArray.GetLength(1)];
+        for(int i = 0; i < oneArray.GetLength(0); i++)
+            for(int j = 0; j < twoArray.GetLength(1); j++)
+                for(int k = 0; k < oneArray.GetLength(1); k++)
+                    matrixProduct[i, j] += oneArray[i, k] * twoArray[k, j];
+    return matrixProduct;
+}
 
 
 Console.WriteLine("First array:");
@@ -156,18 +164,96 @@ Console.WriteLine("Second array:");
 int[,] twoArray = CreateRandom2dArray();
 Show2dArray(oneArray);
 Show2dArray(twoArray);
+Show2dArray(MatrixProduct(oneArray, twoArray));
+*/
 
 // Задача 4. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел.
 // Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+/*
+int[,,] Create3dArray(int rows, int columns, int depth, int min, int max)
+{
+    int[,,] array = new int[rows, columns, depth];
+    for(int i = 0; i < array.GetLength(0); i++)
+        for(int j = 0; j < array.GetLength(1); j++)
+            for(int k = 0; k < array.GetLength(2); k++)
+            {
+                int element = new Random().Next(min, max + 1);
+                    if(FindElement(array, element)) continue;
+                    array[i, j, k] = element;
+            }                
+
+    return array;
 
 
+        bool FindElement(int[,,] array, int el)
+        {
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    for (int k = 0; k < array.GetLength(2); k++)
+                    {
+                        if (array[i, j, k] == el) return true;
+                    }
+                }
+            }
+            return false;
+        }
+}
 
+void Show3dArray(int[,,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+            for(int k = 0; k < array.GetLength(2); k++)
+                Console.Write($"{array[i, j, k]}({i}, {j}, {k}) ");
 
+            Console.WriteLine();
+        
+    }
+    Console.WriteLine();
+}
 
-
+int[,,] myArray = Create3dArray(2, 2, 2, 10, 99);
+Show3dArray(myArray);
+*/
 
 // Задача 5. Напишите программу, которая заполнит спирально массив 4 на 4.
+/*
+int[,] CreateSpiralArray(int rows, int columns)
+{
+    int[,] array = new int[rows, columns];
+    int num = 1;
+    int i = 0;
+    int j = 0;
 
+    while (num <= rows * columns)
+    {
+        array[i, j] = num; 
+        if(i <= j + 1 && i + j < columns - 1) j++;
+        else if (i < j && i + j >= rows - 1) i++;
+        else if (i >= j && i + j > columns - 1) j--;
+        else --i;    
+        ++num;
+    }
+    return array;
 
+}
 
+void ShowArray(int[,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array[i, j] + " ");
 
+        Console.WriteLine();
+        
+    }
+    Console.WriteLine();
+}
+
+int[,] myArray = CreateSpiralArray(6, 6);
+ShowArray(myArray);
+*/
