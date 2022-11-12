@@ -115,9 +115,47 @@ Console.WriteLine("Row with minimum sum of elements is: " + (row + 1));
 // Задача 3. Задайте две матрицы. Напишите программу,
 // которая будет находить произведение двух матриц.
 
+int[,] CreateRandom2dArray()
+{
+    Console.Write("Input a number of rows: ");
+    int rows = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Input a number of columns: ");
+    int columns = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Input a min possible value: ");
+    int minValue = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Input a max possible value: ");
+    int maxValue = Convert.ToInt32(Console.ReadLine());
+
+    int[,] array = new int[rows, columns];
+
+    for (int i = 0; i < rows; i++)
+        for (int j = 0; j < columns; j++)
+            array[i, j] = new Random().Next(minValue, maxValue + 1);
+    return array;
+}
+
+void Show2dArray(int[,] array)
+{
+    for(int i = 0; i < array.GetLength(0); i++)
+    {
+        for(int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array[i, j] + " ");
+
+        Console.WriteLine();
+        
+    }
+    Console.WriteLine();
+}
 
 
 
+
+Console.WriteLine("First array:");
+int[,] oneArray = CreateRandom2dArray();
+Console.WriteLine("Second array:");
+int[,] twoArray = CreateRandom2dArray();
+Show2dArray(oneArray);
+Show2dArray(twoArray);
 
 // Задача 4. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел.
 // Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
